@@ -1,6 +1,6 @@
 {
   "name": "1st-app",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -13,5 +13,9 @@
     "jade": "~1.9.2",
     "morgan": "~1.5.3",
     "serve-favicon": "~2.2.1"
+  },
+  "engines": {
+    "node": "0.10.29",
+    "npm": "1.4.21"
   }
 }
