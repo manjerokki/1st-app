@@ -1,0 +1,57 @@
+html, body {
+height: 100%;
+margin-top: 0;
+
+}
+
+.grid {
+color: red;
+margin: auto 10px;
+padding: 0;
+height: 100%;
+display: grid;
+
+grid-template-areas: "logo logo logo"
+					 "menu menu menu"
+					 "aside cont ads"
+					 "footer footer footer";
+grid-template-rows: 1fr 1fr 70% 1fr;
+grid-template-columns: 1fr 70% 1fr;
+}
+
+/*@media all and (max-width: 575px) {
+body {
+color: green;
+height: 100%;
+}
+}
+*/
+
+
+
+
+
+#logo {
+grid-area: logo;
+}
+#menu {
+grid-area: menu;
+}
+#adide {
+grid-area: aside;
+}
+#content {
+grid-area: cont;
+}
+#ads {
+grid-area: ads;
+}
+#footer {
+grid-area: footer;
+}
+#logo, #menu, #aside, #content, #ads, #footer {
+height: 100%;
+border: 1px solid black;
+border-collapse: collapse;
+box-sizing: border-box;
+}
